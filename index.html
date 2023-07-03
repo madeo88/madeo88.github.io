@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		ciao
-	</head>
-	<body>
-		<h1>Hello World</h1>
-		<p>I'm hosted with GitHub Pages.</p>
-	</body>
+<head>
+    <title>Generatore di QR Code Instagram</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Generatore di QR Code Instagram</h1>
+        <form action="generate_qr.php" method="POST">
+            <label for="nickname">Nickname Instagram:</label>
+            <input type="text" name="nickname" id="nickname" required>
+            <button type="submit">Genera QR Code</button>
+        </form>
+        <div id="qrCodeContainer"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
+
