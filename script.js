@@ -9,4 +9,11 @@ function generateQRCode() {
         width: 200,
         height: 200
     });
+
+    var qrCodeLink = document.createElement('a');
+    qrCodeLink.href = instagramUrl;
+    qrCodeLink.target = "_blank";
+    qrCodeLink.innerHTML = "Apri profilo Instagram";
+
+    qrCodeContainer.appendChild(qrCodeLink);
 }
