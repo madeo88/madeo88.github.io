@@ -3,14 +3,15 @@
 <head>
     <title>Generatore di QR Code Instagram</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="qrcode.min.js"></script>
 </head>
 <body>
     <div class="container">
         <h1>Generatore di QR Code Instagram</h1>
-        <form action="generate_qr.php" method="GET">
+        <form>
             <label for="nickname">Nickname Instagram:</label>
-            <input type="text" name="nickname" id="nickname" required>
-            <button type="submit">Genera QR Code</button>
+            <input type="text" id="nickname" required>
+            <button type="button" onclick="generateQRCode()">Genera QR Code</button>
         </form>
         <div id="qrCodeContainer"></div>
     </div>
