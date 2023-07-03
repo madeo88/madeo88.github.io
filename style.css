@@ -85,3 +85,28 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+
+#qrCodeTable {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.qrCodeContainer {
+    position: relative;
+    margin: 10px;
+    display: inline-block;
+}
+
+.qrCodeContainer a {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}

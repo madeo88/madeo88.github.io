@@ -9,12 +9,12 @@
 <body>
     <div class="container">
         <h1>Generatore di QR Code Instagram</h1>
-        <form>
+        <form onsubmit="generateQRCode(event)">
             <label for="nickname">Nickname Instagram:</label>
             <input type="text" id="nickname" required>
-            <button type="button" onclick="generateQRCode()">Genera QR Code</button>
+            <button type="submit">Genera QR Code</button>
         </form>
-        <div id="qrCodeContainer"></div>
+        <table id="qrCodeTable"></table>
     </div>
 
     <script src="script.js"></script>
